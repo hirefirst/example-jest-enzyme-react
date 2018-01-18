@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+          [
+              "env",
+              {
+                  "modules": "commonjs",
+                  "useBuiltIns": "usage",
+                  "debug": false
+              }
+          ],
+          "react",
+          "jest"
+      ],
+      "plugins": [
+      ]
+    }
+  }
+}
